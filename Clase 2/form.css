@@ -12,17 +12,23 @@
 }
 .card p{
     font-size:0.75em;
+   
 }
 .fila{
     display: flex;
-    gap:10px;
+    gap:35px;
     margin: 10px 0px 10px 0px;
 }
-input{
+input,textarea{
     font-size: 1.2em;
     border:#cccccc 1px solid;
     padding: 10px;
+    border-radius: 5px;
+    width: 100%;
 }
 input::placeholder{
     font-size: 12px;
+}
+.checkbox{
+     margin-left: -30px;
 }
