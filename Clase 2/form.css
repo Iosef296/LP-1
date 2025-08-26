@@ -1,0 +1,28 @@
+.card{
+    background-color: #fefefe;
+    margin:0 auto;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: 7px 7px 7px #8e8e8e;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card h3{
+    font-size:1.5em;
+}
+.card p{
+    font-size:0.75em;
+}
+.fila{
+    display: flex;
+    gap:10px;
+    margin: 10px 0px 10px 0px;
+}
+input{
+    font-size: 1.2em;
+    border:#cccccc 1px solid;
+    padding: 10px;
+}
+input::placeholder{
+    font-size: 12px;
+}

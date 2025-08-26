@@ -8,6 +8,7 @@ body{
 .logo{
     width: 150px;
     margin-left: 50px;
+    animation: animacion3 2s;
 }
 ul{
     background-color: white;
@@ -37,10 +38,6 @@ li{
 .foto{
     flex:60%;   
 }
-
-.fondo{
-    width: 100%;
-}
 .texto h1{
     font-size: 2.7em;
     padding-right: 40px;
@@ -58,9 +55,93 @@ button{
     border-radius: 10px;
     color:white;
     box-shadow: -2px 5px 10px black;
+    
+    
+}
+button:hover{
+    animation: animacion4 1.5s infinite ease-in-out;
+    cursor:pointer
 }
 footer{
     margin-top: 40px;
     height: 60px;
     background-color: #f7b44c;
+}
+@media(max-width:600px){
+    .header{
+        display: block;
+        text-align: center;
+    }
+    .main{
+        display: block;
+        text-align: center;
+    }
+    .fondo{
+        width: 80%;
+        margin-top: 30px;
+    }
+    .texto{
+        width: 80%;
+        margin-top: 30px;
+    }
+}
+.fondo{
+    width:100%;
+    animation: animacion1 3s,animaciones_multiples 4s infinite 3s;
+    
+}
+.texto{
+    width:100%;
+    animation-name: animacion2;
+    animation-duration: 3s;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    background-color: #f4805e;
+    padding: 5px 10px 5px 10px;
+    color:#fefefe;
+    border-radius: 10px;
+    font-weight: bold;
+    animation: animacion4 2s infinite;
+}
+@keyframes animacion1 {
+    0%{
+        transform: translate(600px,-200px);
+    }
+    
+}
+@keyframes animacion2 {
+    0%{
+        transform: translate(-600px);
+    }
+}
+@keyframes animacion3 {
+    0%{
+        transform: translateY(-200px);
+    }
+    70%{
+        transform: translateY(20px);
+        opacity: 1;
+    }
+    100%{
+         transform: translateY(0px);
+    }
+    
+}
+@keyframes animacion4 {
+    0%{transform: scale(1);}
+    25%{transform: scale(1.1);}
+    40%{transform: scale(0.95);}
+    60%{transform: scale(1.1);}
+    100%{transform: scale(1);}
+}
+@keyframes animaciones_multiples {
+    0%{filter:sepia(20%);}
+    25%{filter:grayscale(100%);}
+    50%{filter:invert(100%);}
+    75%{filter: blur(60px);}
+    100%{filter:none}
+    
 }
