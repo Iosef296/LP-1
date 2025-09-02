@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesion 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div class ="header">
+        <div><img src="capture_250819_154542.png" alt="logo" class="logo"></div>
+        <div>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="autos.html">AUTOS</a></li>
+                <li><a href="ejercicios.html">EJERCICIOS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">    
+        <form action="#">
+            <div class="ejercicio1">
+            <h3>Ecuacion de 2do. grado</h3>
+            <div class="fila"><p>A</p><input type="number" id="a"></div>
+            <div class="fila"><p>B</p><input type="number" id="b"></div>
+            <div class="fila"><p>C</p><input type="number" id="c"></div>
+            <div class="boton">
+                <button onclick="calcular1()">Calcular</button></div>
+            <div><p id="r">Resultado</p></div>
+            </div>
+        </form>
+        <form action="#">
+            <div class="ejercicio1">
+            <h3>Estacionamiento Plaza Vea</h3>
+            <div class="fila"><p>Horas</p><input type="number" id="horas"></div>
+            <div class="fila"><p>Voucher</p><select id="opt">
+                <option value="NO">NO</option>
+                <option value="SI">SI</option>
+            </select></div>
+            <div class="boton">
+                <button onclick="calcular2()">Calcular</button></div>
+            <div><p id="cobro">Resultado</p></div>
+            </div>
+        </form>
+    </div>
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,29 @@
+body{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.autos{
+    margin: 0 auto;
+    text-align: center;
+}
+.autos h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.colores{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    margin:10px;
+}
+.colores div{
+    border: 2px solid black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#rojo{background-color: red;}
+#blanco{background-color: white;}
+#gris{background-color: grey;}
+#cafe{background-color: brown;}
+#negro{background-color: black;}

@@ -22,7 +22,7 @@
 input,textarea{
     font-size: 1.2em;
     border:#cccccc 1px solid;
-    padding: 10px;
+    padding: 7px;
     border-radius: 5px;
     width: 100%;
 }
@@ -31,4 +31,33 @@ input::placeholder{
 }
 .checkbox{
      margin-left: -30px;
+}
+
+form{
+    margin: 0 auto;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid #f4805e;
+    background-color: #cccccc;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #7b7b7b;
+}
+.boton{
+    text-align: center;
+    margin-bottom: 30px;
+}
+p{
+    margin-top: 10px;
+}
+.ejercicio1 h3{
+    margin-bottom: 20px;
+    color:#f4805e;
+    text-align: center;
+}
+#r{
+    text-align: center;
+}
+#cobro{
+    text-align: center;
 }
